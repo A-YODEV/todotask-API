@@ -1,0 +1,25 @@
+GET http://localhost:1002/todotask HTTP/1.1
+
+####
+GET http://localhost:1002/todotask/636b7614abc14cd7dfbf97fb HTTP/1.1
+
+####
+POST http://localhost:1002/todotask HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "workout",
+    "description" : "time to workout"
+}
+
+####
+PUT http://localhost:1002/todotask/636e66d07347a0b0a464cd09 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "workout",
+    "description" : "get ready to workout"
+}
+
+####
+DELETE http://localhost:1002/todotask/636b80780cbae9ec78239142 HTTP/1.1
